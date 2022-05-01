@@ -1,9 +1,192 @@
 * {
     box-sizing: border-box;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.widgetAgent {
+#widgetAgent {
+    background-color: #fff;
     display: grid;
+    grid-template-columns: max-content;
     align-content: center;
+    width: max-content;
+    border: 1px solid var(--clr-border);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    position: absolute;
+}
+
+#widgetAgentHeader {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+#widgetAgentHeader:hover {
+    background-color: hsla(214, 70%, 55%, 0.539);
+    transition: 0.3s;
+}
+
+#widgetAgentHeader>p {
+    margin-right: 150px;
+}
+
+.sectionWidget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionWidget>div>img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.sectionWidget>div:first-child>p {
+    margin-right: 60px;
+}
+
+.sectionWidget>div:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: #eee;
+    width: 100%;
+    position: inherit;
+    right: 10px;
+}
+
+.sectionWidget>div:nth-child(2) {
+    width: max-content;
+}
+
+.sectionWidget>div:nth-child(2)>div:nth-child(odd) {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    /*  position: relative;
+    right: 40px;*/
+}
+
+.sectionWidget>div:nth-child(2)>div:nth-child(4) {
+    display: flex;
+    align-items: center;
+    padding: 20px 14px;
+    gap: 10px;
+}
+
+.sectionWidget>div:nth-child(3),
+#formCallReason {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+#chatboxAuthenticate {
+    border: 1px dashed #eee;
+    padding: 10px;
+    width: 420px;
+}
+
+#chatboxCallReason {
+    border: 1px dashed #eee;
+    padding: 10px;
+    margin-top: 10px;
+    width: 420px;
+}
+
+#formCallReason {
+    gap: 10px;
+}
+
+#circle {
+    background-color: var(--clr-link);
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    padding: 4px;
+    text-align: center;
+    margin: 10px;
+}
+
+.buttonWrapper {
+    padding: 10px 20px;
+}
+
+button {
+    float: right;
+    border: 1px solid var(--clr-border);
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 8px 14px;
+    color: var(--clr-link)
+}
+
+button:hover {
+    background-color: var(--clr-border);
+}
+
+button:active {
+    background-color: var(--clr-btn-active);
+    color: #fff;
+}
+
+select {
+    border-radius: 6px;
+    border: 1px solid #DBDBDB;
+    width: 150px;
+    height: 32px;
+    font-size: 16px;
+    padding: 4px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+input {
+    border-radius: 6px;
+    border: 1px solid #DBDBDB;
+    font-size: 16px;
+    outline: none;
+}
+
+input:active {
+    border: 1px solid var(--clr-link);
+}
+
+#otherInput {
+    padding-left: 10px;
+    width: 100px;
+    height: 32px;
+}
+
+#checkboxRound {
+    border-radius: 50%;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+:root {
+    --clr-link: #3A80DC;
+    --clr-border: #EFEFF0;
+    --clr-btn-active: #A6A8AB
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-link);
 }
