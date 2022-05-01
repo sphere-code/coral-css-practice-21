@@ -1,4 +1,4 @@
-dragElement(document.getElementById(widgetAgent));
+dragElement(document.getElementById("widgetAgent"));
 
 function dragElement(elmnt) {
     var pos1 = 0,
@@ -43,6 +43,3 @@ function dragElement(elmnt) {
         document.onmousemove = null;
     }
 }
-
-
-//minimize widget
